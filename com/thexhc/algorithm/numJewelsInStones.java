@@ -47,4 +47,22 @@ public class numJewelsInStones {
         }
         return index;
     }
+
+
+    /**
+     * @author thexhc
+     * @version 2.0.0
+     * @Date 2019/4/26 10:40
+     */
+    public  int numJewelsInStones2(String J, String S) {
+        int count=0;
+        for (int i = 0; i <J.length() ; i++) {
+            for (int j = 0; j <S.length(); j++) {
+                if(J.charAt(i)==S.charAt(j)){
+                     count++;
+                }
+            }
+        }
+        return count;
+    }
 }
