@@ -31,7 +31,7 @@ public class numJewelsInStones {
 
     /**
      * @author thexhc
-     * @version 1.0
+     * @version 1.0.0
      * @Date 2019/4/26 9:40
      */
     public  int numJewelsInStones(String J, String S) {
