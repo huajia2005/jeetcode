@@ -30,9 +30,12 @@ public class numJewelsInStones {
     }
 
     /**
-     * @author thexhc
-     * @version 1.0.0
-     * @Date 2019/4/26 9:40
+     * @Author xuhongchun
+     * @Description
+     * @Date 2019/4/26 9:55
+     * @Param [J, S]
+     * @return int
+     * @throws
      */
     public  int numJewelsInStones(String J, String S) {
         char[] jc=J.toCharArray();
@@ -50,9 +53,12 @@ public class numJewelsInStones {
 
 
     /**
-     * @author thexhc
-     * @version 2.0.0
+     * @Author xuhongchun
+     * @Description //TODO
      * @Date 2019/4/26 10:40
+     * @Param [J, S]
+     * @return int
+     * @throws
      */
     public  int numJewelsInStones2(String J, String S) {
         int count=0;
@@ -65,4 +71,25 @@ public class numJewelsInStones {
         }
         return count;
     }
+
+
+    /**
+     * @Author xuhongchun
+     * @Description
+     * @Date 8:54 2019/4/30
+     * @Param [J, S]
+     * @return int
+     * @throws
+     */
+    public int numJewelsInStones3(String J, String S) {
+        int index=0;
+        for (int i = 0; i <S.length() ; i++) {
+            if(J.indexOf(S.charAt(i))>=0){
+                index++;
+            }
+        }
+        return index;
+    }
+
+
 }
